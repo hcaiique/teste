@@ -1,0 +1,15 @@
+package teste;
+
+public class constantes {
+	
+	String email = "caiique.hs@gmail.com";
+	String data_valida = "060402020";
+	String data_invalida = "000000000";
+	String cpf_valido = "60568953355";
+	String cpf_invalido = "9999999999999999";
+	String buscaNaoExiste = "000000000000000000000000";
+	String buscaSucesso = "panela";
+	String sucesso = "sucesso";
+	String falha = "falha";
+
+}

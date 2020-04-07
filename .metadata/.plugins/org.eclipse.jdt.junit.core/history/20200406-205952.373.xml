@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="A_01_01_CompraErroAmericana (1)" project="maven-template" tests="1" started="0" failures="1" errors="0" ignored="0">
+  <testsuite name="com.lazerycode.selenium.tests.A_01_01_CompraErroAmericana" incomplete="true" displayname="A_01_01_CompraErroAmericana" uniqueid="[engine:junit-vintage]/[runner:com.lazerycode.selenium.tests.A_01_01_CompraErroAmericana]">
+    <failure>org.opentest4j.MultipleFailuresError: Multiple Failures (2 failures)&#13;
+	org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'DESKTOP-77HDC14', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: FirefoxDriver&#13;
+	java.lang.NullPointerException: &lt;no message&gt;&#13;
+	at org.junit.vintage.engine.execution.TestRun.getStoredResultOrSuccessful(TestRun.java:196)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.fireExecutionFinished(RunListenerAdapter.java:226)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testRunFinished(RunListenerAdapter.java:93)&#13;
+	at org.junit.runner.notification.SynchronizedRunListener.testRunFinished(SynchronizedRunListener.java:42)&#13;
+	at org.junit.runner.notification.RunNotifier$2.notifyListener(RunNotifier.java:103)&#13;
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)&#13;
+	at org.junit.runner.notification.RunNotifier.fireTestRunFinished(RunNotifier.java:100)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)&#13;
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:43)&#13;
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)&#13;
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)&#13;
+	at java.util.Iterator.forEachRemaining(Unknown Source)&#13;
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)&#13;
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)&#13;
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)&#13;
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:82)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:73)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:141)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</failure>
+    <testcase name="test" classname="com.lazerycode.selenium.tests.A_01_01_CompraErroAmericana" incomplete="true" displayname="test" uniqueid="[engine:junit-vintage]/[runner:com.lazerycode.selenium.tests.A_01_01_CompraErroAmericana]/[test:test(com.lazerycode.selenium.tests.A_01_01_CompraErroAmericana)]"/>
+  </testsuite>
+</testrun>

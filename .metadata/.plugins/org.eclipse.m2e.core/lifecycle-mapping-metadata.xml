@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lifecycleMappingMetadata>
+  <pluginExecutions>
+    <pluginExecution>
+      <pluginExecutionFilter>
+        <groupId>com.lazerycode.selenium</groupId>
+        <artifactId>driver-binary-downloader-maven-plugin</artifactId>
+        <versionRange>1.0.18</versionRange>
+        <goals>
+          <goal>selenium</goal>
+        </goals>
+      </pluginExecutionFilter>
+      <action>
+        <ignore />
+      </action>
+    </pluginExecution>
+  </pluginExecutions>
+</lifecycleMappingMetadata>

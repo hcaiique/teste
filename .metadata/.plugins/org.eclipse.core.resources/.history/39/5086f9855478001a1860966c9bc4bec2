@@ -1,0 +1,25 @@
+package teste;
+
+import org.junit.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class teste {
+	
+	
+	static WebDriver driver;
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+
+		// System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+
+		System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
+
+		driver = new FirefoxDriver();
+		// driver = new ChromeDriver();
+		// site
+		driver.get("https://www.americanas.com.br/");
+	
+
+}

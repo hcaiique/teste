@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestMessageBuilder" project="maven-unit-test" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.mkyong.examples.TestMessageBuilder" time="0.0" displayname="TestMessageBuilder" uniqueid="[engine:junit-jupiter]/[class:com.mkyong.examples.TestMessageBuilder]">
+    <testcase name="testNumber10" classname="com.mkyong.examples.TestMessageBuilder" time="0.0" displayname="testNumber10()" uniqueid="[engine:junit-jupiter]/[class:com.mkyong.examples.TestMessageBuilder]/[method:testNumber10()]"/>
+    <testcase name="testHelloWorld" classname="com.mkyong.examples.TestMessageBuilder" time="0.0" displayname="testHelloWorld()" uniqueid="[engine:junit-jupiter]/[class:com.mkyong.examples.TestMessageBuilder]/[method:testHelloWorld()]"/>
+  </testsuite>
+</testrun>
