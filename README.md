@@ -1,4 +1,4 @@
-CONFIGURAÇÃO DO PROJETO DE TESTES FUNCIONAIS DO SEI
+CONFIGURAÇÃO DO PROJETO DE TESTES FUNCIONAIS DA AMERICANAS 
 1 - Atualizar as Dependências do Projeto Acessar o diretório do projeto sei-teste e atualizar as dependências do maven
 utilizando as libs que estão inseridas. 
 
