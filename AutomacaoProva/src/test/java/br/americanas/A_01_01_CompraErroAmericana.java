@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class A_01_01_CompraErroAmericana {
 
 	static WebDriver driver;
-
+ 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 
@@ -71,15 +71,14 @@ public class A_01_01_CompraErroAmericana {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		// clicar continuar a compra tive que usar o xpath pois nao estava localizando
-		// pelo class e n�o tinha id
-		WebElement clicarComprarConti = driver
-				.findElement(ByXPath.xpath("/html/body/div[6]/div/div/div[2]/div[3]/div/div[2]/div/a/div/span"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		// clique pelo id
+		WebElement clicarComprarConti = driver.findElement(By.id("btn-continue"));
 		clicarComprarConti.click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		// clicar em remover itens
-		WebElement clicarContinuarCompra = driver.findElement(By.id("btn-continue"));
+		// clicar em remover itens usando xpath pois nao tinha Id
+		WebElement clicarContinuarCompra = driver.findElement(ByXPath.xpath("/html/body/div[4]/section/section/div[1]/div[2]/div[1]/section/ul/li/div[2]/div[2]/div[2]/span"));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		clicarContinuarCompra.click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -97,8 +96,8 @@ public class A_01_01_CompraErroAmericana {
 		String resultado2 = resultadoPesquisaErro.getText();
 		System.out.println(resultado2);
 		resultado2 = resultado2.toLowerCase();
-
-		if (resultado2.contains("produto") || resultado2.contains("Superrice")) {
+		//Pegar a mensagem de cesta e vazia, zerando o item para verificar a msg, se tiver sua e cesta vem sucesso se nao tiver vem erro
+		if (resultado2.contains("Sua") || resultado2.contains("cesta")) {
 			System.out.println("Sucesso");
 		} else {
 			System.out.println("Erro na pesquisa");
@@ -112,15 +111,15 @@ public class A_01_01_CompraErroAmericana {
 		System.out.println(resultado2);
 
 		if (resultado2.contains("produto") || resultado2.contains("Superrice")) {
-			
-			//os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
+
+			// os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
 			System.out.println(resultado2);
 			System.out.println("produto");
 			System.out.println("Sucesso");
 			resultadoTeste = true;
 
 		} else {
-			//os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
+			// os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
 			System.out.println("Erro no testes");
 			System.out.println("Erro na pesquisa");
 			System.out.println("O resultado foi: " + resultado2);

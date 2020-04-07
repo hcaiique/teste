@@ -71,42 +71,37 @@ public class A_01_02_FluxoComprasSucessoAmericanas {
 
 		// clicar continuar a compra tive que usar o xpath pois nao estava localizando
 		// pelo class e n�o tinha id
-		WebElement clicarComprarConti = driver.findElement(ByXPath.xpath("/html/body/div[6]/div/div/div[2]/div[3]/div/div[2]/div/a/div/span"));
+		WebElement clicarComprarConti = driver
+				.findElement(ByXPath.xpath("/html/body/div[6]/div/div/div[2]/div[3]/div/div[2]/div/a/div/span"));
 		clicarComprarConti.click();
 
 //		usando classname
 //		WebElement clicarComprarConti = driver.findElement(By.className("TextUI-sc-1i9za0i-4 gulQE TextUI-sc-12tokcy-0 gYgvXd"));
 //		clicarComprarConti.click();
-		
-		
+
 		// clicar comprar continuar
 		WebElement clicarContinuar = driver.findElement(By.id("btn-continue"));
 		clicarContinuar.click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		// clicar continuar a compra ate inserir e-mail e senha
 		WebElement clicarContinuarCompra = driver.findElement(By.id("buy-button"));
 		clicarContinuarCompra.click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		//inserir e-mail e senha
+
+		// inserir e-mail e senha
 		WebElement caixadeEmail = driver.findElement(By.id("email-input"));
 		// String de panela para compara no final
 		caixadeEmail.sendKeys(constantes.email);
 		WebElement caixadeEmailSenha = driver.findElement(By.id("password-input"));
 		caixadeEmailSenha.sendKeys(constantes.senhaEmail);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		
-		
-		
 
-		
 	}
 
 	@Test
 	public void test() {
-		
+
 		boolean resultadoTeste;
 
 		// receber os dados da tela e comparar com a string pesquisada
@@ -131,15 +126,15 @@ public class A_01_02_FluxoComprasSucessoAmericanas {
 		System.out.println(resultado2);
 
 		if (resultado2.contains("Login") || resultado2.contains("cliente")) {
-			
-			//os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
+
+			// os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
 			System.out.println(resultado2);
 			System.out.println("sua cesta");
 			System.out.println("Sucesso");
 			resultadoTeste = true;
 
 		} else {
-			//os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
+			// os sysout eu deixei pos fica mais visivel o que est� acontecendo na tela
 			System.out.println("Erro no testes");
 			System.out.println("Erro na pesquisa");
 			System.out.println("O resultado foi: " + resultado2);
@@ -148,18 +143,16 @@ public class A_01_02_FluxoComprasSucessoAmericanas {
 		}
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//comparacao de dados com a tela, porem o correto seria pegar os daos da tela e fazer a compara��o com a base de dados
+		// comparacao de dados com a tela, porem o correto seria pegar os daos da tela e
+		// fazer a comparacao com a base de dados
 		Assert.assertTrue(resultadoTeste);
-		
-		
-		
-		
+
 	}
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		
-		//fechar aplica��o
+
+		// fechar aplicacao
 		driver.close();
 
 	}

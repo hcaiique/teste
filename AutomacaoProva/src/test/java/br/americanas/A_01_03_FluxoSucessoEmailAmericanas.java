@@ -72,7 +72,9 @@ public class A_01_03_FluxoSucessoEmailAmericanas {
 		// clicar continuar a compra tive que usar o xpath pois nao estava localizando
 		// pelo class e n�o tinha id
 		WebElement clicarComprarConti = driver.findElement(ByXPath.xpath("/html/body/div[6]/div/div/div[2]/div[3]/div/div[2]/div/a/div/span"));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		clicarComprarConti.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 //		usando classname
 //		WebElement clicarComprarConti = driver.findElement(By.className("TextUI-sc-1i9za0i-4 gulQE TextUI-sc-12tokcy-0 gYgvXd"));
