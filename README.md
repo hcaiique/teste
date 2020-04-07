@@ -1,5 +1,5 @@
 CONFIGURAÇÃO DO PROJETO DE TESTES FUNCIONAIS DA AMERICANAS 
-1 - Atualizar as Dependências do Projeto Acessar o diretório do projeto sei-teste e atualizar as dependências do maven
+1 - Atualizar as Dependências do Projeto Acessar o diretório do projeto americanas e atualizar as dependências do maven
 utilizando as libs que estão inseridas. 
 
 ALT + F5 para dar update Maven e baixar as dependencia. 
